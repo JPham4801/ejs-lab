@@ -1,0 +1,7 @@
+  <%- include("./partials/html-head") %>
+  <%- include("./partials/nav") %>
+  <h1><%= restaurant.name %> (<%= restaurant.isOpen ? "Yes! we are open" : "Sorry! We are closed."%>)</h1>
+  <p>Address: <%= restaurant.address %></p>
+  <p>Phone number: <%= restaurant.phone %></p>
+</body>
+</html>

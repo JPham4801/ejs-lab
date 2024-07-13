@@ -1,0 +1,15 @@
+  <%- include("./partials/html-head") %>
+  <%- include("./partials/nav") %>
+  <h1><%= category %> menu</h1>
+
+  <% menu.forEach((item, index) =>{ %>
+    <a style="text-decoration: none; color: blue;" href="/<%= index %>">
+      <h3><%= item.name %> ($<%= item.price %>)</h3>
+    </a>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>Ratings: <%= item.rating %></li>
+      <li>Description: <%= item.details %></li>
+    </ul>
+  <% }) %>
+</body>
+</html>
